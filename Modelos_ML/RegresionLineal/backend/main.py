@@ -1,7 +1,6 @@
 import joblib
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
-from streamlit import exception 
 from pathlib import Path
 
 app = FastAPI(title="API de Predicción de Precios de Viviendas", description="Esta API predice el precio de una vivienda según su superficie en metros cuadrados utilizando un modelo de regresión lineal entrenado.", version="1.0.0")
