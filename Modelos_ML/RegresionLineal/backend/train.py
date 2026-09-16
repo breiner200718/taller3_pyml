@@ -10,7 +10,7 @@ import os
 
 # Datos de entrenamiento X y Y
 x = np.array([[40], [50], [60], [85], [100], [120]])
-y = np.array([100000, 120000, 150000, 200000, 250000, 300000])
+y = np.array([210000000, 300000000, 350000000, 500000000, 600000000, 700000000])
 
 # Entrenar el modelo de regresión lineal
 model = LinearRegression()
