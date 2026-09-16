@@ -1,4 +1,4 @@
-{% load static %}
+{% load static humanize %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -52,7 +52,7 @@
                 {% if result %}
                 <div class="result">
                     <span>PRECIO PREDICHO</span>
-                    <strong>${{ result.predicted_price|floatformat:2 }}</strong>
+                    <strong>${{ result.predicted_price|floatformat:2|intcomma }}</strong>   
                     <p>Para una vivienda de {{ result.aream2|floatformat:2 }} m²</p>
                 </div>
                 {% endif %}
